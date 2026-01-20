@@ -11,10 +11,10 @@ const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length)
 })
 export class User {
 
-  @Input() avatar  !: string
-  @Input() name !: string
+  @Input({ required: true }) avatar  !: string
+  @Input({ required: true }) name !: string
 
-  get imagePath(){
+  get imagePath() {
     return 'assets/users/' + this.avatar
   }
 
