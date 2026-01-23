@@ -18,6 +18,8 @@ export class NewTask {
   onCancel() {
     this.cancel.emit();
   }
+
+  onSubmitTask() {}
 }
 
 
