@@ -5,3 +5,9 @@ export interface TaskItem {
   summary: string
   dueDate: string
 }
+
+export interface AddTaskItem{
+  title: string
+  summary: string
+  date: string
+}
