@@ -7,7 +7,6 @@ import { TheUser } from './user.model';
 
 @Component({
   selector: 'app-user',
-  imports: [],
   templateUrl: './user.html',
   styleUrl: './user.css',
 })
@@ -15,8 +14,7 @@ export class User {
 
 
   @Input({ required: true }) user !: TheUser
-
-
+  @Input({required: true}) isSelected !: boolean
   @Output() select = new EventEmitter<string>()
 
   get imagePath() {
