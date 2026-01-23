@@ -3,11 +3,7 @@ import { DUMMY_USERS } from '../../dummy-users';
 
 const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length)
 
-interface TheUser {
-  id: string
-  avatar: string
-  name: string
-}
+import { TheUser } from './user.model';
 
 @Component({
   selector: 'app-user',
