@@ -4,11 +4,13 @@ import { DUMMY_USERS } from '../../dummy-users';
 const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length)
 
 import { TheUser } from './user.model';
+import { Card } from "../shared/card/card";
 
 @Component({
   selector: 'app-user',
   templateUrl: './user.html',
   styleUrl: './user.css',
+  imports: [Card],
 })
 export class User {
 
