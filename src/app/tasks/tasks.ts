@@ -27,9 +27,7 @@ export class Tasks {
     return this.tasksService.getUserTasks(this.userId)
   }
 
-  onTaskComplete(taskId: string) {
-    return this.tasksService.removeTask(taskId)
-  }
+  
 
   onStartAddTask() {
     this.isAddingTask = true;
